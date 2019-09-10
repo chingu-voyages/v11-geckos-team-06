@@ -1,13 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
 
+import MainApp from './components/mainApp';
 import Test from './components/test';
 
 function App() {
   return (
     <div className="App">
       Foodie Finds <i className="fa fa-500px"></i>
+      <MainApp />
       <Test />
     </div>
   );
