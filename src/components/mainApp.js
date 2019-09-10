@@ -12,7 +12,7 @@ class mainApp extends React.Component {
     render() {
       return(
           <div>
-            modal, recipeList, header go here
+            {/* modal, recipeList, header go here */}
           </div>
       );
     }
