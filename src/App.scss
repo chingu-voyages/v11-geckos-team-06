@@ -4,14 +4,12 @@
     display: grid;
     grid-template-rows: 100vh min-content;
 
+    background-color: #F6F6F6;
+
     &-bk {
         &-img {
         background: url('./images/FoodieBackground.jpg');
         background-size: cover;
-        }
-
-        &-solid {
-            background-color: #F6F6F6;
         }
     }
 

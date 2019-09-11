@@ -9,10 +9,8 @@ function App() {
     <div className="App">
 
       <div className="App-bk-img"></div>
-      <div className="App-bk-solid">
-        <MainApp />
-      </div>
 
+      <MainApp />
 
       Foodie Finds <i className="fa fa-500px"></i>
       

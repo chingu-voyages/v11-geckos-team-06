@@ -1,0 +1,58 @@
+.recipe {
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(148, 148, 148, 0.788);
+    border-radius: 10px;
+
+    position: relative;
+    display: grid;
+    
+    grid-template-rows: 1fr 50%;
+    
+    align-content: space-between;
+    overflow: hidden;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 3px 3px 5px rgba(87, 87, 87, 0.788);
+    }
+
+    &-text-main {
+        padding: 2rem;
+
+        p {
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 2;
+
+            i {
+                margin: 0 1rem;
+            }
+        }
+    }
+
+    &-title {
+        font-family: $font-secondary;
+        font-size: 2.8rem;
+        border-bottom: 1px solid black;
+        margin-bottom: 1rem;
+        padding-bottom: .5rem;
+        text-align: center;
+    }
+
+    &-img {
+        width: 100%;
+    }
+
+    &-outline {
+        height: 330px;
+        width: 280px;
+        border-radius: 10px;
+        border: 1px solid black;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+}
