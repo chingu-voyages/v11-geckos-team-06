@@ -6,7 +6,11 @@ function Header() {
     <div className='overlay'>
       <div className='main-top'>
         <div className='main-left-design'>
-          <h6 className="receipe-text">RECEIPE FINDER</h6>
+          <div className="adjust1"></div>
+          <div className="adjust2">
+            <h6 className="receipe-text">RECEIPE FINDER</h6>
+          </div>
+          <div className="adjust3"></div>
         </div>
         <div className='main-right-design'>
           <div className="top-header">
