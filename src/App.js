@@ -3,7 +3,6 @@ import './App.scss';
 import Header from './components/Header';
 
 import MainApp from './components/mainApp';
-// Foodie Finds! <i className="fa fa-500px"></i>
 
 function App() {
   return (
