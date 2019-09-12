@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+
+import RecipeList from './recipeList';
+
 import '../styles/main.scss';
 import { async } from 'q';
 
+<<<<<<< HEAD
 //Variable to store API Key for https request
 const apiKey = '173d1e55ebd3439797b6b57f7570975e';
 
@@ -36,6 +40,21 @@ class mainApp extends Component {
           <div key={recipe.id}>
             <h3>{recipe.title}</h3>
             <img src={recipe.image} alt="" />
+=======
+class mainApp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          
+        };
+    }
+    
+    render() {
+      return(
+          <div className="mainApp-container">
+            modal, recipeList, header go here
+            <RecipeList />
+>>>>>>> f04fb08f811a397ffe9098245a984d2cace5016b
           </div>
         );
       })
