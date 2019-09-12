@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import RecipeList from './recipeList';
+
 import '../styles/main.scss';
 
 class mainApp extends React.Component {
@@ -11,8 +14,9 @@ class mainApp extends React.Component {
     
     render() {
       return(
-          <div>
+          <div className="mainApp-container">
             modal, recipeList, header go here
+            <RecipeList />
           </div>
       );
     }
