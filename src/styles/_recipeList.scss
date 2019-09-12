@@ -1,20 +1,30 @@
 
 .recipe-list {
     
-
     padding: 5rem;
 
     &-head {
         font-size: 3.6rem;
         font-family: $font-secondary;
         grid-column: 1 / -1;
+        margin-bottom: 4rem;
+
+        display: grid;
+        grid-template-columns: max-content 1fr;
+
+        &:after {
+            border-top: 3px dotted rgb(99, 99, 99);
+            content: "";
+            display: block; 
+            margin: 2.6rem;
+        }
     }
 
     &-cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
         justify-content: space-between;
-        grid-gap: 2rem;
+        grid-gap: 4rem;
     }
 
 }

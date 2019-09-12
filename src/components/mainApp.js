@@ -14,7 +14,7 @@ class mainApp extends React.Component {
     
     render() {
       return(
-          <div>
+          <div className="mainApp-container">
             modal, recipeList, header go here
             <RecipeList />
           </div>
