@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import RecipeList from './recipeList';
+// import RecipeList from './recipeList';
+import Recipe from './recipe';
 
 import '../styles/main.scss';
 
@@ -21,7 +22,7 @@ class mainApp extends Component {
   //Use Async/Await and the fetch method to make call to API
   componentDidMount = async () => {
     const req = await fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?type=${mealType}&number=${count}&apiKey=${apiKey}`
+      `https://api.spoonacular.com/recipes/complexSearch?type=${mealType}&number=${count}&addRecipeInformation=true&fillIngredients=true&apiKey=${apiKey}`
     );
     const res = await req.json();
 
@@ -34,7 +35,8 @@ class mainApp extends Component {
     return (
       <div className="mainApp-container">
         modal, recipeList, header go here
-        <RecipeList recipes={this.state.recipes} />
+        {/* <RecipeList recipes={this.state.recipes} /> */}
+        <Recipe recipes={this.state.recipes} />
       </div>
     );
   }
