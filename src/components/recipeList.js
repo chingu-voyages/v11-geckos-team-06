@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import Recipe from "./recipe";
+import Recipe from './recipe';
 
-import "../styles/main.scss";
+import '../styles/main.scss';
 
 class recipeList extends React.Component {
   constructor(props) {
