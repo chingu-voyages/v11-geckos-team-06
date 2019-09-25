@@ -1,6 +1,6 @@
 
 .recipe-list {
-    
+    background-color: white;
     padding: 5rem;
 
     &-head {
@@ -22,7 +22,7 @@
 
     &-cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
         justify-content: space-between;
         grid-gap: 4rem;
     }

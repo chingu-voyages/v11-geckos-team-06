@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-// import RecipeList from './recipeList';
+import RecipeList from './recipeList';
 import Recipe from './recipe';
 
 import '../styles/main.scss';
@@ -36,7 +36,7 @@ class mainApp extends Component {
       <div className="mainApp-container">
         modal, recipeList, header go here
         {/* <RecipeList recipes={this.state.recipes} /> */}
-        <Recipe recipes={this.state.recipes} />
+        <RecipeList recipes={this.state.recipes} />
       </div>
     );
   }
