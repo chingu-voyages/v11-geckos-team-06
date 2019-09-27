@@ -24,7 +24,8 @@ $bp-small: 37.5em; //600px
 
   // ----- Main Div -----
   .overlay {
-    position: fixed;
+    // position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
@@ -109,7 +110,7 @@ $bp-small: 37.5em; //600px
     left: 210px;
   }
 
-  .category-btn div:hover {
+  .wrapthatflex:hover {
     background: rgba(199, 198, 198, 0.3);
     transition: background-color 0.4s ease;
   }
@@ -345,3 +346,19 @@ $bp-small: 37.5em; //600px
     //   color: #0f0 !important;
     //   outline: solid red 1px !important;
     // }
+.App {
+
+    display: grid;
+    grid-template-rows: 100vh min-content;
+
+    background-color: #F6F6F6;
+
+    &-bk {
+        &-img {
+        background: url('./images/FoodieBackground.jpg');
+        background-size: cover;
+        }
+    }
+
+
+}
