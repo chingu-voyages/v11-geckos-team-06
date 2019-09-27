@@ -1,3 +1,16 @@
+// COLOR VARIABLES
+
+// FONT VARIABLES
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Playfair Display', serif;
+
+//RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
+
 // ----Body-----
 
 #header-bg {
@@ -27,7 +40,7 @@
     height: 100%;
     flex-grow: 1;
     display: inline-block;
-    background: rgba(51, 51, 51, 0.3);
+    // background: rgba(51, 51, 51, 0.3);
     // border: 1px solid black;
     // background-color: green;
   }
@@ -38,14 +51,19 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 25px;
 
     color: #FFFFFF;
     display: table-cell;
     // width: 100%;
     /* height: 100%; */
     position: absolute;
-    font-size: 12px;
+    width: 148px;
+    height: 37px;
+    left: 39px;
+    bottom: 230px;
+    font-size: 18px;
+
     vertical-align: middle;
     transform: rotate(-90deg);
   }
@@ -79,42 +97,129 @@
         height: 61%;
   }
 
-  .category-btn {
-    // border: 1px solid green;
-    padding: 10px 5px;
-    height: 39%;
+
+  // ------ Category Btn -------
+
+  .category-main-div {
     display: flex;
-  }
-
-  .category-btn div i {
-    display: block;
-    font-size: 13px;
-    margin-top: 10px;
-  }
-  .category-btn div span {
-    display: block;
-  }
-
-  .category-btn div {
-    flex: 1;
-    text-align: center;
-    width: 165px;
-    height: 90px;
-    border-radius: 20px;
-    margin: 17px;
-    padding: 5px;
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(74, 73, 73, 0);
-    cursor: pointer;
-
-    
+    justify-content: flex-start;
+    width: 80%;
+    position: relative;
+    top: 134px;
+    left: 88px;
   }
 
   .category-btn div:hover {
     background: rgba(199, 198, 198, 0.3);
     transition: background-color 0.4s ease;
   }
+
+  .wrapthatflex {
+    margin:5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;  /* <--- Really freaking cool! */
+    align-items: center;
+
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+  }
+  
+
+  .category-1 {
+    // position: absolute;
+    width: 165px;
+    height: 128px;
+    // left: 219px;
+    // top: 489px;
+
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+
+  }
+
+  .category-2 {
+    // position: absolute;
+    width: 165px;
+    height: 128px;
+    // left: 418px;
+    // top: 489px;
+
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+
+  }
+
+  .category-3 {
+    // position: absolute;
+    width: 165px;
+    height: 128px;
+    // left: 617px;
+    // top: 491px;
+
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+
+  }
+
+  .category-4 {
+    // position: absolute;
+    width: 165px;
+    height: 128px;
+    // left: 817px;
+    // top: 486px;
+
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+
+  }
+
+  .category-5 {
+    // position: absolute;
+    width: 165px;
+    height: 128px;
+    // left: 1017px;
+    // top: 488px;
+
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+
+  }
+
+  .category-main-div div i {
+    display: block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 41px;
+
+    color: #FFFFFF;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .category-main-div div span {
+    display: block;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+    text-align: center;
+
+  }
+
+
+
+
+
+  
+
+
+
 
   .main-right-design {
     color: #fff;
@@ -127,40 +232,59 @@
 
   }
 
-  .foodieFindsH1Div {
-    width: 100%;
-    height: 117px;
-  }
+  // .foodieFindsH1Div {
+  //   // width: 100%;
+  //   // height: 117px;
+  // }
 
   .foodieFindsH1 {
-    margin: 10px 17px;
-    font-family: Playfair Display;
+    position: absolute;
+    width: 545px;
+    height: 129px;
+    left: 210px;
+    top: 177px;
+
+
+    font-family: $font-primary;
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
     line-height: 96px;
+
+    color: #FFFFFF;
   }
 
   .searchBoxDiv {
-    width: 100%
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: rgba(105, 100, 100, -0.2);
+    width: 486px;
+    height: 55px;
+    position: absolute;
+    top: 300px;
+    left: 208px;
   }
 
   .searchBox {
-    border-radius: 17px;
-    border: solid #fff 1px;
+    // border: 1px solid #FFFFFF;
+    border: none;
+    border-color: transparent;
+    border-radius: 20px;
     background-color: rgba(105, 100, 100, -0.2);
-    width: 451px;
-    height: 28px;
-    padding: 16px 11px;
-    margin: 10px 17px;
+    width: 486px;
+    height: 55px;
     color: rgba(255, 255, 255, 0.54);
     cursor: text;
 
-    font-family: Lato;
+    position: relative;
+    left: 5px;
+    font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 28px;
   }
 
   // .platform {
@@ -217,7 +341,7 @@
 
     // -------- Test --------
     // * {
-    //   background-color: #000 !important;
+    //   // background-color: #000 !important;
     //   color: #0f0 !important;
-    //   outline: solid #f00 1px !important;
+    //   outline: solid red 1px !important;
     // }
