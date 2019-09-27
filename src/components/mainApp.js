@@ -1,21 +1,45 @@
 import React, { Component } from 'react';
+
+// import RecipeList from './recipeList';
+import Recipe from './recipe';
+
 import '../styles/main.scss';
 
-class mainApp extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          
-        };
-    }
-    
-    render() {
-      return(
-          <div>
-            modal, recipeList, header go here
-          </div>
-      );
-    }
+//Variable to store API Key for https request
+const apiKey = '173d1e55ebd3439797b6b57f7570975e';
+
+//This is temporary. These variables will be selected by user input
+const count = 10;
+const mealType = 'dessert';
+
+class mainApp extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      recipes: []
+    };
   }
-  
-  export default mainApp;
+  //Use Async/Await and the fetch method to make call to API
+  componentDidMount = async () => {
+    const req = await fetch(
+      `https://api.spoonacular.com/recipes/complexSearch?type=${mealType}&number=${count}&addRecipeInformation=true&fillIngredients=true&apiKey=${apiKey}`
+    );
+    const res = await req.json();
+
+    this.setState({ recipes: res.results });
+    console.log(this.state.recipes);
+  };
+
+  //Render API data to virtual DOM
+  render() {
+    return (
+      <div className="mainApp-container">
+        modal, recipeList, header go here
+        {/* <RecipeList recipes={this.state.recipes} /> */}
+        <Recipe recipes={this.state.recipes} />
+      </div>
+    );
+  }
+}
+
+export default mainApp;
