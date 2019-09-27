@@ -21,26 +21,28 @@ function Header() {
               <input type="text" className="searchBox" placeholder="Search millions of recipes ..."></input>
             </div>
               
+         
+
+              {/* ------- Category Area ------  */}
+              <div className="category-main-div">
+                <div className="category-1 wrapthatflex">
+                  <i class="fas fa-angle-double-down"></i><span>category 1</span>
+                </div>
+                <div className="category-2 wrapthatflex">
+                  <i class="fas fa-angle-double-down"></i><span>category 1</span>
+                </div>
+                <div className="category-3 wrapthatflex">
+                  <i class="fas fa-angle-double-down"></i><span>category 1</span>
+                </div>
+                <div className="category-4 wrapthatflex">
+                  <i class="fas fa-angle-double-down"></i><span>category 1</span>
+                </div>
+                <div className="category-5 wrapthatflex">
+                  <i class="fas fa-angle-double-down"></i><span>category 1</span>
+                </div>
+              </div>
           </div>
 
-          {/* ------- Category Area ------  */}
-          <div className="category-main-div">
-            <div className="category-1 wrapthatflex">
-              <i class="fas fa-angle-double-down"></i><span>category 1</span>
-            </div>
-            <div className="category-2 wrapthatflex">
-              <i class="fas fa-angle-double-down"></i><span>category 1</span>
-            </div>
-            <div className="category-3 wrapthatflex">
-              <i class="fas fa-angle-double-down"></i><span>category 1</span>
-            </div>
-            <div className="category-4 wrapthatflex">
-              <i class="fas fa-angle-double-down"></i><span>category 1</span>
-            </div>
-            <div className="category-5 wrapthatflex">
-              <i class="fas fa-angle-double-down"></i><span>category 1</span>
-            </div>
-          </div>
         </div>
       </div>
       
