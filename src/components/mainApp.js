@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Header from './Header';
 import RecipeList from './recipeList';
 import Recipe from './recipe';
 
@@ -34,7 +35,8 @@ class mainApp extends Component {
   render() {
     return (
       <div className="mainApp-container">
-        modal, recipeList, header go here
+        
+        <Header />
         {/* <RecipeList recipes={this.state.recipes} /> */}
         <RecipeList recipes={this.state.recipes} />
       </div>

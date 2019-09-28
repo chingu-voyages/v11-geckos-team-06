@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.scss';
 
+
 import MainApp from './components/mainApp';
-import Test from './components/test';
 
 function App() {
   return (
@@ -12,11 +12,7 @@ function App() {
 
       <MainApp />
 
-      Foodie Finds <i className="fa fa-500px"></i>
       
-      <Test />
-
-
     </div>
   );
 }
