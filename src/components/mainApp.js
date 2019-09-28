@@ -35,9 +35,7 @@ class mainApp extends Component {
   render() {
     return (
       <div className="mainApp-container">
-        
         <Header />
-        {/* <RecipeList recipes={this.state.recipes} /> */}
         <RecipeList recipes={this.state.recipes} />
       </div>
     );
