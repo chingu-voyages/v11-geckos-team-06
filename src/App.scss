@@ -43,7 +43,7 @@ $bp-small: 37.5em; //600px
     height: calc(100vh - 15rem);
   }
 
-  .main-top {display: flex; height: 100%;}
+  .main-top {display: flex; height: 100%; box-sizing: border-box;}
 
   .main-left-design {
     // width: 10rem;
@@ -247,7 +247,9 @@ $bp-small: 37.5em; //600px
   .main-right-design {
     color: #fff;
     padding: 5rem;
-    padding-left: 10rem;
+    padding-left: 7rem;
+    
+    
     // width: 88%;
 
     // height: 35em;
