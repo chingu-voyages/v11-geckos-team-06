@@ -6,8 +6,13 @@ import MainApp from './components/mainApp';
 
 function App() {
   return (
-    <div className="App App-bk-img">
-      <MainApp />   
+    <div className="App">
+    <div className="App-bk App-bk-img">
+    
+    <MainApp /> 
+    
+    </div>
+    
     </div>
   );
 }

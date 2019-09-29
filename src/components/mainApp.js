@@ -11,7 +11,7 @@ const apiKey = '173d1e55ebd3439797b6b57f7570975e';
 
 //This is temporary. These variables will be selected by user input
 const count = 10;
-const mealType = 'dessert';
+const mealType = 'dinner';
 
 class mainApp extends Component {
   constructor(props) {
