@@ -1,3 +1,6 @@
 .mainApp-container {
-    box-shadow: 3px 3px 5px rgba(148, 148, 148, 0.788);
+    
+
+    display: grid;
+    grid-template-rows: 100vh min-content;
 }
