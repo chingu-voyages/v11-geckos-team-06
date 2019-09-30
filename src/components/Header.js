@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import "../styles/main.scss";
+import React, { Component } from 'react';
+import '../styles/main.scss';
 
-function Header() {
+const Header = props => {
   return (
     <div className="overlay">
       <div className="main-top">
@@ -13,11 +13,13 @@ function Header() {
             <h1 className="foodieFindsH1">FoodieFinds</h1>
 
             <div className="searchBoxDiv">
-              <input
-                type="text"
-                className="searchBox"
-                placeholder="Search millions of recipes ..."
-              ></input>
+              <form onSubmit={this.props.getRecipes}>
+                <input
+                  type="text"
+                  className="searchBox"
+                  placeholder="Search millions of recipes ..."
+                ></input>
+              </form>
             </div>
 
             <div className="category-main-div">
@@ -47,6 +49,6 @@ function Header() {
       </div>
     </div>
   );
-}
+};
 
 export default Header;
