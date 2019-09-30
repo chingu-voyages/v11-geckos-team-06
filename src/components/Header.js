@@ -13,7 +13,7 @@ const Header = props => {
             <h1 className="foodieFindsH1">FoodieFinds</h1>
 
             <div className="searchBoxDiv">
-              <form onSubmit={props.getRecipes}>
+              <form onSubmit={props.handleSearch}>
                 <input
                   type="text"
                   className="searchBox"
@@ -24,25 +24,45 @@ const Header = props => {
             </div>
 
             <div className="category-main-div">
-              <div className="category category-1 wrapthatflex">
+              <div
+                className="category category-1 wrapthatflex"
+                onClick={props.handleClick}
+                title="appetizer"
+              >
                 <i className="fas fa-angle-double-down"></i>
-                <span>category 1</span>
+                <span>Appetizers</span>
               </div>
-              <div className="category category-2 wrapthatflex">
+              <div
+                className="category category-2 wrapthatflex"
+                onClick={props.handleClick}
+                title="side dish"
+              >
                 <i className="fas fa-angle-double-down"></i>
-                <span>category 1</span>
+                <span>Side Dishes</span>
               </div>
-              <div className="category category-3 wrapthatflex">
+              <div
+                className="category category-3 wrapthatflex"
+                onClick={props.handleClick}
+                title="soup"
+              >
                 <i className="fas fa-angle-double-down"></i>
-                <span>category 1</span>
+                <span>Soup</span>
               </div>
-              <div className="category category-4 wrapthatflex">
+              <div
+                className="category category-4 wrapthatflex"
+                onClick={props.handleClick}
+                title="main course"
+              >
                 <i className="fas fa-angle-double-down"></i>
-                <span>category 1</span>
+                <span>Entrees</span>
               </div>
-              <div className="category category-5 wrapthatflex">
+              <div
+                className="category category-5 wrapthatflex"
+                onClick={props.handleClick}
+                title="dessert"
+              >
                 <i className="fas fa-angle-double-down"></i>
-                <span>category 1</span>
+                <span>Dessert</span>
               </div>
             </div>
           </div>

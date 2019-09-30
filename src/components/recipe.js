@@ -25,11 +25,7 @@ class recipe extends React.Component {
           </p>
         </div>
         <div className="recipe-img-container">
-          <img
-            src={`https://spoonacular.com/recipeImages/${this.props.photo}`}
-            alt="meal"
-            className="recipe-img"
-          />
+          <img src={this.props.photo} alt="Meal" className="recipe-img" />
         </div>
         <div className="recipe-outline"></div>
       </div>
