@@ -12,28 +12,29 @@ class recipe extends React.Component {
   }
 
   render() {
-    
-      return (
-        <div className="recipe">
-          <div className="recipe-text-main">
-            <h3 className="recipe-title">{this.props.title}</h3>
-            <p>
-              <i className="fa fa-history"></i>
-              {this.props.min} minutes
-            </p>
-            <p>
-              <i className="fa fa-male"></i>serves {this.props.servings}
-            </p>
-          </div>
-          <div className="recipe-img-container">
-            <img src={this.props.photo} alt="meal" className="recipe-img" />
-          </div>
-          <div className="recipe-outline"></div>
+    return (
+      <div className="recipe">
+        <div className="recipe-text-main">
+          <h3 className="recipe-title">{this.props.title}</h3>
+          <p>
+            <i className="fa fa-history"></i>
+            {this.props.min} minutes
+          </p>
+          <p>
+            <i className="fa fa-male"></i>serves {this.props.servings}
+          </p>
         </div>
-      );
+        <div className="recipe-img-container">
+          <img
+            src={`https://spoonacular.com/recipeImages/${this.props.photo}`}
+            alt="meal"
+            className="recipe-img"
+          />
+        </div>
+        <div className="recipe-outline"></div>
+      </div>
+    );
   }
 }
 
 export default recipe;
-
-

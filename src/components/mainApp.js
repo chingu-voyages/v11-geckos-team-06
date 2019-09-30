@@ -33,21 +33,21 @@ class mainApp extends Component {
   };
 
   //Use Async/Await and the fetch method to make call to API
-  componentDidMount = async () => {
-    const req = await fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?type=${mealType}&number=${count}&addRecipeInformation=true&fillIngredients=true&apiKey=${apiKey}`
-    );
-    const res = await req.json();
+  // componentDidMount = async () => {
+  //   const req = await fetch(
+  //     `https://api.spoonacular.com/recipes/complexSearch?type=${mealType}&number=${count}&addRecipeInformation=true&fillIngredients=true&apiKey=${apiKey}`
+  //   );
+  //   const res = await req.json();
 
-    this.setState({ recipes: res.results });
-    console.log(this.state.recipes);
-  };
+  //   this.setState({ recipes: res.results });
+  //   console.log(this.state.recipes);
+  // };
 
   //Render API data to virtual DOM
   render() {
     return (
       <div className="mainApp-container">
-        <Header recipes={this.state.recipes} />
+        <Header recipes={this.state.recipes} getRecipes={this.getRecipes} />
         <RecipeList recipes={this.state.recipes} />
       </div>
     );

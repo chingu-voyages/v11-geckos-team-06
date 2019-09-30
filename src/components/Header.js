@@ -13,11 +13,12 @@ const Header = props => {
             <h1 className="foodieFindsH1">FoodieFinds</h1>
 
             <div className="searchBoxDiv">
-              <form onSubmit={this.props.getRecipes}>
+              <form onSubmit={props.getRecipes}>
                 <input
                   type="text"
                   className="searchBox"
                   placeholder="Search millions of recipes ..."
+                  name="recipeFilter"
                 ></input>
               </form>
             </div>
