@@ -10,14 +10,15 @@ function Header() {
         </div>
         <div className="main-right-design">
           <div className="top-header">
-            <h1 className="foodieFindsH1">FoodieFinds</h1>
-
-            <div className="searchBoxDiv">
-              <input
-                type="text"
-                className="searchBox"
-                placeholder="Search millions of recipes ..."
-              ></input>
+            <div>
+              <h1 className="foodieFindsH1">FoodieFinds</h1>
+              <div className="searchBoxDiv">
+                <input
+                  type="text"
+                  className="searchBox"
+                  placeholder="Search millions of recipes ..."
+                ></input>
+              </div>
             </div>
 
             <div className="category-main-div">
