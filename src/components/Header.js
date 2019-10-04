@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "../styles/main.scss";
 
+import Pasta from "../images/pasta.svg";
+import Icon from "./Icon";
+
 function Header() {
   return (
     <div className="overlay">
@@ -23,11 +26,11 @@ function Header() {
 
             <div className="category-main-div">
               <div className="category category-1 wrapthatflex">
-                <i className="fas fa-angle-double-down"></i>
+              <Icon width={30} fill='#fff'/>
                 <span>category 1</span>
               </div>
               <div className="category category-2 wrapthatflex">
-                <i className="fas fa-angle-double-down"></i>
+                <Icon width={30} fill='#fff'/>
                 <span>category 1</span>
               </div>
               <div className="category category-3 wrapthatflex">
