@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import RecipeList from './recipeList';
 import Recipe from './recipe';
-import Modal from "./Modal";
+
 
 import '../styles/main.scss';
 
@@ -31,21 +31,13 @@ class mainApp extends Component {
     console.log(this.state.recipes);
   };
 
-  //Modal
-    state = {
-      show: false
-    };
-    showModal = e => {
-      this.setState({
-        show: !this.state.show
-      });
-    };
+
 
   //Render API data to virtual DOM
   render() {
     return (
       <div className="mainApp-container">
-        <Modal />
+        
         <Header />
         <RecipeList recipes={this.state.recipes} />
 

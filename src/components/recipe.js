@@ -14,7 +14,7 @@ class recipe extends React.Component {
   render() {
     
       return (
-        <div className="recipe">
+        <div className="recipe" onClick={this.props.onClick}>
           <div className="recipe-text-main">
             <h3 className="recipe-title">{this.props.title}</h3>
             <p>
