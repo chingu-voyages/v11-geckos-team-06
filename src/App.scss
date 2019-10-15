@@ -33,3 +33,11 @@ $bp-small: 37.5em; //600px
 
 
 }
+
+@media(max-width: $bp-small) {
+ .App {
+     &-bk {
+         padding: 0rem;
+     }
+ }
+}

@@ -16,7 +16,8 @@ class mainApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      recipes: []
+      recipes: [],
+      query: 'most popular'
     };
   }
 
@@ -27,18 +28,19 @@ class mainApp extends Component {
       `https://api.spoonacular.com/recipes/complexSearch?query=${recipeFilter}&number=${count}&sort=popularity&addRecipeInformation=true&fillIngredients=true&apiKey=${apiKey}`
     );
     const res = await req.json();
-    this.setState({ recipes: res.results });
-    console.log(this.state.recipes);
+    this.setState({ recipes: res.results, query: recipeFilter });
+    
   };
 
   handleClick = async e => {
     const category = e.target.parentElement.title;
+    
     e.preventDefault();
     const req = await fetch(
       `https://api.spoonacular.com/recipes/complexSearch?type=${category}&number=${count}&sort=popularity&addRecipeInformation=true&fillIngredients=true&apiKey=${apiKey}`
     );
     const res = await req.json();
-    this.setState({ recipes: res.results });
+    this.setState({ recipes: res.results, query: category });
   };
 
   //Use Async/Await and the fetch method to make call to API
@@ -60,8 +62,12 @@ class mainApp extends Component {
           recipes={this.state.recipes}
           handleSearch={this.handleSearch}
           handleClick={this.handleClick}
+
         />
-        <RecipeList recipes={this.state.recipes} />
+        <RecipeList 
+        recipes={this.state.recipes}
+        query={this.state.query}
+         />
       </div>
     );
   }

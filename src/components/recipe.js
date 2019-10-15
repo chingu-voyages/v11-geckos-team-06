@@ -27,6 +27,7 @@ class recipe extends React.Component {
         <div className="recipe-img-container">
           <img src={this.props.photo} alt="Meal" className="recipe-img" />
         </div>
+        <a href={this.props.link} target="_blank"><button className="recipe-btn">Full Recipe</button></a>
         <div className="recipe-outline"></div>
       </div>
     );
