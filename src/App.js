@@ -1,22 +1,18 @@
 import React from 'react';
 import './App.scss';
 
+
 import MainApp from './components/mainApp';
-import Test from './components/test';
 
 function App() {
   return (
     <div className="App">
-
-      <div className="App-bk-img"></div>
-
-      <MainApp />
-
-      Foodie Finds <i className="fa fa-500px"></i>
-      
-      <Test />
-
-
+    <div className="App-bk App-bk-img">
+    
+    <MainApp /> 
+    
+    </div>
+    
     </div>
   );
 }

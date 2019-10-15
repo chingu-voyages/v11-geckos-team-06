@@ -1,7 +1,17 @@
 
 .recipe-list {
-    
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.228);
     padding: 5rem;
+    margin-top: -15rem;
+
+    &-ul {
+        // text-decoration: underline;
+        margin: 0px 1rem;
+
+        // font-style: italic;
+       
+    }
 
     &-head {
         font-size: 3.6rem;
@@ -10,10 +20,10 @@
         margin-bottom: 4rem;
 
         display: grid;
-        grid-template-columns: max-content 1fr;
+        grid-template-columns: repeat(3,max-content) 1fr;
 
         &:after {
-            border-top: 3px dotted rgb(99, 99, 99);
+            border-top: 2px dotted rgb(0, 0, 0);
             content: "";
             display: block; 
             margin: 2.6rem;
@@ -22,9 +32,17 @@
 
     &-cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
         justify-content: space-between;
         grid-gap: 4rem;
     }
 
+}
+
+@media(max-width: $bp-largest){
+.recipe-list {
+    &-head {
+        font-size: 2.6rem;
+    }
+}
 }

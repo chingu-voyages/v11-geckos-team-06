@@ -1,17 +1,43 @@
+// COLOR VARIABLES
+
+// FONT VARIABLES
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Playfair Display', serif;
+
+//RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
 
 .App {
 
     display: grid;
-    grid-template-rows: 100vh min-content;
+    // grid-template-rows: 100vh min-content;
 
-    background-color: #F6F6F6;
+  
 
     &-bk {
         &-img {
         background: url('./images/FoodieBackground.jpg');
         background-size: cover;
+        height: 100vh;
         }
+        
+        padding: 5rem;
+        background-color: #F6F6F6;
+        height: 200vh;
+
     }
 
 
+}
+
+@media(max-width: $bp-small) {
+ .App {
+     &-bk {
+         padding: 0rem;
+     }
+ }
 }

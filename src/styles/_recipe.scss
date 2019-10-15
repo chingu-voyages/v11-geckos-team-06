@@ -1,6 +1,6 @@
 .recipe {
     width: 100%;
-    height: 350px;
+    height: 400px;
     background-color: white;
     box-shadow: 3px 3px 5px rgba(148, 148, 148, 0.788);
     border-radius: 10px;
@@ -16,6 +16,28 @@
     &:hover {
         transform: translateY(-5px);
         box-shadow: 3px 3px 5px rgba(87, 87, 87, 0.788);
+    }
+
+    &-btn {
+        position: absolute;
+        bottom: 2.5rem;
+        left: 50%;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border: none;
+        text-transform: uppercase;
+        padding: .75rem 2rem;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        font-weight: 300;
+        transform: translateX(-50%);
+        z-index: 5;
+        width: 180px;
+
+        &:hover {
+            cursor: pointer;
+           color: rgb(0, 247, 255);
+        }
     }
 
     &-text-main {
@@ -34,19 +56,34 @@
 
     &-title {
         font-family: $font-secondary;
-        font-size: 2.8rem;
+        font-size: 2.2rem;
         border-bottom: 1px solid black;
         margin-bottom: 1rem;
-        padding-bottom: .5rem;
+        padding-bottom: 1rem;
         text-align: center;
+        min-height: 7rem;
+        display: grid;
+        align-content: center;
+        line-height: 2.2rem;
+    }
+
+    &-img-container {
+        // display: flex;
+        object-fit: cover;
+        
     }
 
     &-img {
+
         width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        
     }
 
     &-outline {
-        height: 330px;
+        height: 380px;
         width: calc(100% - 2rem);
         
         border-radius: 10px;
@@ -54,6 +91,8 @@
         position: absolute;
         top: 10px;
         left: 10px;
+
+        z-index: 0;
     }
 
 }

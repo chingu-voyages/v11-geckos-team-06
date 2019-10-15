@@ -11,14 +11,22 @@ class recipeList extends React.Component {
   }
 
   render() {
+    const { recipes } = this.props;
+
     return (
       <div className="recipe-list">
-        <h2 className="recipe-list-head">Showing 'chicken' recipes</h2>
-
+        <h2 className="recipe-list-head">Showing <span className="recipe-list-ul">'{this.props.query}'</span> recipes</h2>
         <div className="recipe-list-cards">
-          <Recipe />
-          <Recipe />
-          <Recipe />
+          {recipes.map(recipe => (
+            <Recipe
+              key={recipe.id}
+              title={recipe.title}
+              min={recipe.readyInMinutes}
+              servings={recipe.servings}
+              link={recipe.sourceUrl}
+              photo={recipe.image}
+            />
+          ))}
         </div>
       </div>
     );
